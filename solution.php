@@ -1,33 +1,20 @@
 <?php 
 
+//intialize variable
  $numbers = [1, 5, 3, 19, 18, 25];
- 
- $results = [];
 
- $min ;
 
- $length = count($numbers);
+   //loop operator  [for,{while},{do,while}]
+  
+   $length = sizeof($numbers);
 
- sort($numbers);
+   echo $length;
 
- print_r($numbers);
+//    for($i=0;$i;)
 
- $j = 0;
-
- for($i=0;$i<$length;$i++) {
-
-     $results[$j] = $numbers[$i+1] - $numbers[$i];
-
-     $j++;
-
- }
-
- print_r($results);
+   
+   
 
 
 
 
-
- 
-
-?>
