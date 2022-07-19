@@ -7,7 +7,7 @@ Your new development career awaits. Check out the latest listings.
 ADS VIA CARBON
 After trying to solve an exam for a job, I found an interesting question that seems to be very basic, but without the right implementation you may end up in trouble. The problem is the following one, you need to find the minimum difference or smallest interval of the numbers inside an array. For example:
 // From the given array
-[1, 5, 3, 19, 18, 25]
+[1, 5, 3, 19, 18, 25] => 1
 // The smallest interval or minimum difference is: 1
 // Because that's the difference between the 2 
 // closest numbers in the array (numerically speaking)
