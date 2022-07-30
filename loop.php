@@ -8,15 +8,7 @@
   
    $length = sizeof($numbers);
 
-//    for(
-//     $i = 0;
-//     $i<$length;
-//     $i++
-//    ){
 
-//      echo $numbers[$i] . ' ';
-
-//    }
 
 $j = $length;
 
@@ -28,13 +20,13 @@ $j = $length;
 
 // }
 
-do {
+// do {
 
-    echo $numbers[$j - 1] . ' ';
+//     echo $numbers[$j - 1] . ' ';
 
-    $j = $j+1;
+//     $j = $j+1;
 
-}while($j<$length);
+// }while($j<$length);
 
 
 
