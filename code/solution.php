@@ -3,24 +3,51 @@
 require('function.php');
 
 //intialize variable
-   $numbers = [80,1,4,25,12,60,78,70]; // [1,3,5];
+   $numbers = [1, 19, -4, 33, 38, 25, 100]; // [1,3,5];
    $results = [];
 
  //sort 
 
- $numbers = SortArray($numbers);
+//  $length = sizeof($numbers);
+
+ 
+//  $numbers = SortArray($numbers);
 
 
- //soustraction 
+ //substraction
 
-$results = soustraction($numbers);
+// $results = substraction($numbers);
 
 
  //min algorithms 
 
-$min = minimum($results);
+// $min = minimum($results);
 
- echo $min;
+function findminimumInterval(array $array) : int {
+
+     $length = size($array);
+
+     $array = SortArray($array);
+
+     $diff = PHP_INT_MAX;
+
+     for($i=0;$i<$length - 1;$i++){
+
+        if($array[$i+1] - $array[$i] < $diff) {
+
+            $diff = $array[$i+1] - $array[$i];
+
+        }
+
+     }
+   
+    return $diff;
+
+}
+
+$min = findminimumInterval($numbers);
+
+echo $min;
 
 
 

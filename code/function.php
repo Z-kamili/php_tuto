@@ -11,7 +11,6 @@ function size($array) {
 
 function SortArray($array){
 
-
    $length = size($array);
 
      //rules 
@@ -46,6 +45,27 @@ function SortArray($array){
 
 }
 
+function substraction($arr) {
+
+    $length = size($arr);
+
+    $j = 0;
+
+    $results = [];
+
+    for($i=0;$i<$length - 1; $i++)
+    {
+   
+        $results[$j] = $arr[$i+1] - $arr[$i];
+        $j++;
+   
+    }
+
+    return $results;
+
+
+
+}
 
 function minimum($array) {
 
@@ -66,22 +86,5 @@ function minimum($array) {
 
 }
 
-function soustraction($array){
-
-    $length = size($array);
-    $j = 0;
-    $results = [];
-
-    for($i=0;$i<$length - 1; $i++)
-    {
-   
-        $results[$j] = $array[$i+1] - $array[$i];
-        $j++;
-   
-    }
-
-    return $results;
-
-}
 
 ?>
